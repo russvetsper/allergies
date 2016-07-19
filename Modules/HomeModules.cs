@@ -11,7 +11,9 @@ namespace CoinList
       Get["/"] = _ => {
         return View["index.cshtml"];
       };
-
+      Get["/result"] = _ => {
+        return View["result.cshtml"];
+      };
     }
   }
 }
