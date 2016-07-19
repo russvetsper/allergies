@@ -5,14 +5,26 @@
     <title>Result</title>
   </head>
   <body>
+<h1>You enter @Model.GetInputMoney() cent.</h1>
 <h1>Here is your result</h1>
-<h2>Quarter $0.25 X </h2>
-<img src="Contents/img/0.PNG" alt="" />
-<h2>Dime $0.10 X </h2>
-<img src="Contents/img/1.PNG" alt="" />
-<h2>Nickel $0.05 X </h2>
-<img src="Contents/img/2.PNG" alt="" />
-<h2>Penny $0.01 X </h2>
-<img src="Contents/img/3.PNG" alt="" />
-  </body>
+<h2>Quarter $0.25 X @Model.TestCombination()[0]</h2>
+@for(int i =0;i< @Model.TestCombination()[0];i++)
+{
+  <img src="Contents/img/0.PNG" alt="" />
+}
+<h2>Dime $0.10 X @Model.TestCombination()[1]</h2>
+@for(int i =0;i< @Model.TestCombination()[1];i++)
+{
+  <img src="Contents/img/1.PNG" alt="" />
+}
+<h2>Nickel $0.5 X @Model.TestCombination()[2]</h2>
+@for(int i =0;i< @Model.TestCombination()[2];i++)
+{
+  <img src="Contents/img/2.PNG" alt="" />
+}
+<h2>Penny $0.01 X @Model.TestCombination()[3]</h2>
+@for(int i =0;i< @Model.TestCombination()[3];i++)
+{
+  <img src="Contents/img/3.PNG" alt="" />
+}  </body>
 </html>

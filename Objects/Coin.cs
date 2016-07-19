@@ -7,11 +7,9 @@ namespace CoinList.Objects
   {
 
     private double _inputMoney;
-    private double[] _result;
     public Coin(double amount)
     {
       _inputMoney=amount;
-    _result= new double[4]{0,0,0,0};
     }
 
     public double GetInputMoney()
@@ -22,19 +20,12 @@ namespace CoinList.Objects
     {
       _inputMoney=newAmount;
     }
-    public double[] GetResultArray()
-    {
-      return _result;
-    }
-    public void SetResultArray(double[] newArray)
-    {
-      _result=newArray;
-    }
+
 
     public double[] TestCombination()
     {
       string[] coinName= new string[4]{"Quarter","Dime","Nickel","Penny"};
-      double[] coinValue= new double[4]{0.25,0.10,0.05,0.01};
+      double[] coinValue= new double[4]{25,10,5,1};
       double money=this.GetInputMoney();
       double[] resultCombination=new double[4]{0,0,0,0};
 
@@ -53,7 +44,6 @@ namespace CoinList.Objects
 
         }
       }
-
 
       return resultCombination;
     }

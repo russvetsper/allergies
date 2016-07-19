@@ -12,7 +12,9 @@ namespace CoinList
         return View["index.cshtml"];
       };
       Get["/result"] = _ => {
-        return View["result.cshtml"];
+        double inputNumber=Double.Parse(Request.Query["newNumber"]);
+        Coin myCoin = new Coin(Request.Query["newNumber"]);
+        return View["result.cshtml",myCoin];
       };
     }
   }
