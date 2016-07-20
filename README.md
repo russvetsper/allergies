@@ -1,6 +1,6 @@
 # _Coin Combinations_
 
-#### _User can input how many cent they need and we show Combinations _
+#### _User can input number and define amount of allergies _
 
 #### By _**Yi Chiang & Russ Vetsper **_
 
@@ -8,17 +8,17 @@
 
 | Behavior        |Output Example  |
 | ------------- |-----:|
-| $0.01  | 1 penny |
-| $0.05   | 1 nickel|
-| $0.10 | 1 dimes |
-| $0.25 | 1 quarter |
-| $0.04  |  4 penny |
-| $0.08   |  1 nickel+4 penny  |
-| $0.18  | 1 dimes +1 nickel +3 penny  |
-| $0.34| 1 quarter +1 nickel +4 penny |
-| $0.75 | 3 quarter|
-
-
+| 128  |cats|
+| 64   |pollen|
+| 32 |chocolate|
+| 16| tomatoes |
+| 8  | strawberries|
+| 4  |  shellfish |
+| 2  |peanuts |
+| 1| eggs |
+| 129| cats & eggs|
+|9|strawberries & eggs|
+|94|pollen,tomatoes,strawberries,shellfish,peanuts|
 ##Solution
 
 ## Coding Source
