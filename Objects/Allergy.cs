@@ -7,6 +7,8 @@ namespace Allergies.Objects
   {
 
     private int _inputNumber;
+    public string[] itemPicName= new string[8]{"eggs","peanuts","shellfish","strawberries","tomatoes","chocolate", "pollen","cats"   };
+    public int[] itemPicValue= new int[8]{1,2,4,8,16,32,64,128};
     public Allergy(int amount)
     {
       _inputNumber=amount;
